@@ -1,0 +1,130 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fond doux */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6;
+}
+
+/* Section de contact */
+.contact-section {
+    max-width: 600px;
+    margin: 50px auto; /* Centré horizontalement avec un espace en haut */
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0078D7; /* Couleur principale */
+    font-size: 24px;
+}
+
+/* Formulaire */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espace entre les champs */
+}
+
+/* Labels */
+.contact-section label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555; /* Texte légèrement plus sombre */
+}
+
+/* Champs de texte et textarea */
+.contact-section input,
+.contact-section textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none; /* Retire le contour par défaut */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet focus sur les champs */
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #0078D7; /* Couleur principale */
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5); /* Effet lumineux */
+}
+
+/* Bouton d'envoi */
+.contact-section button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #0078D7; /* Couleur principale */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+/* Effet hover pour le bouton */
+.contact-section button:hover {
+    background-color: #005a9e; /* Couleur plus sombre */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+/* Effet actif pour le bouton */
+.contact-section button:active {
+    background-color: #003f7d; /* Couleur encore plus sombre */
+    transform: translateY(1px); /* Effet de clic */
+}
+
+/* Conteneur des liens en bas */
+.center-container {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Boutons de navigation */
+.center-container .button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Texte blanc */
+    background-color: #0078D7; /* Couleur principale */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+/* Effet hover pour les boutons */
+.center-container .button:hover {
+    background-color: #005a9e; /* Couleur plus sombre */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 15px;
+    }
+
+    .center-container .button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

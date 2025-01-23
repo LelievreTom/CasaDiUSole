@@ -1,0 +1,115 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fond doux */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6;
+}
+
+/* Conteneur principal */
+.info-container {
+    max-width: 900px; /* Largeur maximale pour un meilleur focus */
+    margin: 20px auto; /* Centré horizontalement avec marge verticale */
+    padding: 20px;
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Titres */
+h1, h2 {
+    color: #007BFF; /* Couleur principale pour les titres */
+    text-align: center; /* Centrage des titres */
+    margin-bottom: 20px;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fefefe; /* Fond clair pour les tableaux */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* En-têtes des tableaux */
+th {
+    background-color: #f4f4f4; /* Fond gris clair */
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Lignes alternées */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Sections */
+.info-section {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+/* Liens de navigation */
+.center-container {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Texte blanc */
+    background-color: #007BFF; /* Couleur principale */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+
+/* Effet hover des boutons */
+.button:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+    transform: translateY(-3px); /* Légère élévation */
+}
+
+/* Liens en bas */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .info-container {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
