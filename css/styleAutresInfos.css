@@ -113,3 +113,91 @@ a {
         font-size: 14px;
     }
 }
+
+* Conteneur du bouton flottant (déjà défini) */
+.floating-button-container {
+    position: relative;
+}
+
+/* Bouton flottant, ajuster pour une image */
+.main-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0; /* Supprimer les marges internes du bouton */
+    background-color: transparent; /* Pas de fond */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajuster l'image à la taille du bouton */
+.button-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre bien le bouton sans déformation */
+    border-radius: 50%; /* Pour garder l'image circulaire */
+}
+
+/* Effet au survol du bouton */
+.main-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Sous-menu des boutons */
+.submenu {
+    display: none; /* Cacher le sous-menu par défaut */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Afficher le sous-menu */
+.submenu.visible {
+    display: flex; /* Affiche le sous-menu */
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+
+/* Boutons du sous-menu */
+.submenu-button {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submenu-button:hover {
+    background-color: #ddd;
+}
+
+/* Header transparent */
+.floating-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Le fond transparent */
+    z-index: 10; /* Assurez-vous que le header est au-dessus du contenu */
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Aligne le bouton à droite */
+    padding-right: 20px; /* Pour espacer un peu le bouton du bord */
+}
