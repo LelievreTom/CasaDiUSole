@@ -15,16 +15,24 @@ main {
     padding: 20px;
 }
 
-/* Titres principaux */
 h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #007BFF; /* Couleur de titre inspirée des boutons */
+    color: #D4A017; /* Doré pour un effet élégant */
     text-transform: uppercase;
     letter-spacing: 2px;
-    position: relative; /* Nécessaire pour positionner le bouton interactif */
+    font-family: 'Playfair Display', serif; /* Belle police classique */
+    position: relative;
+    line-height: 1.2; /* Espacement équilibré entre les lignes */
 }
+
+h2 span {
+    color: #B22222; /* Rouge foncé pour mettre en valeur "Casa di u Sole" */
+    font-family: 'Poppins', sans-serif; /* Mélange chic avec le reste */
+    font-weight: bold;
+}
+
 
 /* Sous-titres */
 h3 {
