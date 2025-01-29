@@ -29,7 +29,7 @@ h2 {
 
 h2 span {
     color: #1A5276; /* Bleu légèrement plus clair pour un bel effet */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif; /* Belle police classique */
     font-weight: bold;
 }
 
@@ -274,4 +274,32 @@ img[src="images/image21.png"] {
     display: flex;
     justify-content: flex-end; /* Aligne le bouton à droite */
     padding-right: 20px; /* Pour espacer un peu le bouton du bord */
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.pricing-table th {
+    background-color: #2C3E50;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f8f8f8;
 }
